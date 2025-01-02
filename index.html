@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartka dla Informatyka</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1e2f;
+            color: #f0f0f5;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .card {
+            background-color: #2d2d40;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            width: 80%;
+            max-width: 600px;
+        }
+        .card h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #4caf50;
+        }
+        .card p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .card .binary {
+            font-size: 0.9em;
+            color: #888;
+            margin: 10px 0 20px;
+        }
+        .button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .button:hover {
+            background-color: #45a045;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Happy Coding Day!</h1>
+        <p>"Twórz, koduj, inspiruj! Twój świat to linijki kodu, które zmieniają rzeczywistość."</p>
+        <p class="binary">01001000 01100001 01110000 01110000 01111001 00100000 01000100 01100001 01111001!</p>
+        <button class="button" onclick="showMessage()">Kliknij tutaj</button>
+        <p id="hiddenMessage" style="display: none; margin-top: 20px; font-size: 1.1em;">
+            Niech każda linijka kodu przybliża Cię do sukcesu!
+        </p>
+    </div>
+    <script>
+        function showMessage() {
+            document.getElementById('hiddenMessage').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
